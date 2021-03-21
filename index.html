@@ -1,1 +1,84 @@
-Hello World
+<table width=100%>
+<tr>
+  <th>
+    <p>Welcome to <b>Paint</b> - a graph drawing tool, which allows you to create colored graphs!</p>
+    <hr>
+    <h3>User's Guide</h3>
+    <img src='UserGuide/GUI.png' width=100%>
+    <p> The application consists of two seperate canvas that allow the user to create graphs and test whether these are isomorphic.</p>
+    <h4>Drawing</h4>
+    <p>To place a vertex, click on the canvas with right mouse button. By default, the vertex will be colored black.<br>
+      If you want to color a vertex, double click it and it will use your current pen color. (By default, the pen is set to blue) <br>
+      To place an edge, left click the start vertex, drag the mouse to the end vertex and release the button.
+      The edge's color will also depend on your current pen color!
+    </p>
+    <h4>Buttons</h4>
+    <p>Paint supports many operations on your graph. Each canvas comes with many functions that will help you create your graphs.</p>
+    <img src='UserGuide/buttons.png'>
+    <h5>Pen Color</h5>
+    <p>To change pen color, press the <b>Change pen color</b> button.</p>
+      <img src='UserGuide/color.png'>
+    <p>By doing so, a system dialog will open that will allow you to pick a new color. It contains recently used color a few most commonly used colors, just for your graph!</p>
+    <img src='UserGuide/pickcolor.png'>
+    <p>
+      For graphs with many colors, we advise to use the '+' button located at the button of the dialog box.
+      It will open an advance dialog box that will allow the user to open the advance color picker, where user can directly specify the RGB value.
+    </p>
+    <img src='UserGuide/advancepick.png'>
+    <p>We also return the current pen RGB value for user's convenience</p>
+    <img src='UserGuide/label.png'>
+    <h5>Pen Width</h5>
+    <p>Moreover, we provide the user with an ability to change pen width by pressing the <b>Change pen width</b> button.</p>
+    <img src='UserGuide/width.png'>
+    <p>This does not affect the isomorphism testing of the graph! It is only an aesthetic feature.
+      By pressing the button, the user will see a combo box that allows them to specify the width of the pen (1-10 pixels).
+    </p>
+    <h5>Draw Edge</h5>
+    <p>For bigger graphs, we recommend using the <b>Draw Edge</b> button, as it allows the user to connect the graph more precisely.
+    </p>
+    <img src='UserGuide/edge.png'>
+    <p>Pressing the button will open a new dialog box that will allow the user to specify start and end vertex of the new edge.
+      If the user decides to create an edge between the same vertex, it will color the vertex instead.
+    </p>
+    <img src='UserGuide/drawedge.png'>
+    <p>After specifing the vertices, the user will see the same dialog box to pick the edge color as when they change the pen color</p>
+    <h5>Open and Save</h5>
+    <p> User can also save and open existing graphs. </p>
+    <img src='UserGuide/open.png'>
+    <p>To save a graph, the user needs to press the <b>Save</b> button. It will open the system standard dialog for saving files.
+      Saving will produce <b>three</b> files that are <b>crucial</b> for the system to run properly!
+    </p>
+    <p>To open a graph, the user needs to press the <b>Open</b> button. It will open the system standard dialog for opening files.
+        The user should select the <b>PNG</b> file to properly load the graph!
+    </p>
+    <h5>Clear</h5>
+    <p>Clear allows the user to clear their canvas by erasing all edges and vertices</p>
+    <img src='UserGuide/clear.png'>
+    <h5>Shuffle</h5>
+    <p>Shuffle allows the user to shuffle the vertices around! It leaves all the edges intact, but it changes the labelling of all the vertices randomly.
+    </p>
+    <img src='UserGuide/shuffle.png'>
+    <h4>Isomorphic Testing</h4>
+    <img src='UserGuide/IsomorphismButtons.png' width=100%>
+    <p>The user can check whether the two graphs that they drew are isomorphic.
+      However, to do so, they first need to specify a runnable file that will perform the testing!
+      They need to specify the runnable file that then will perform the check in the background.
+      After the test, the user will be notified of the outcome and will be able to unify both graphs if they would like to do so.
+    </p>
+    <table width=100%>
+      <tr>
+        <th><img src='UserGuide/negative.png'></th>
+        <th><img src='UserGuide/positive.png'></th>
+      </tr>
+    </table>
+  </th>
+    <th>
+      <table width=50%>
+        <tr><th><img src='UserGuide/m.png'></th></tr>
+        <tr><th><img src='UserGuide/graph3.png'></th></tr>
+        <tr><th><img src='UserGuide/graph1.png'></th></tr>
+        <tr><th><img src ='UserGuide/graph2.png'></th></tr>
+      </table>
+    </th>
+  </tr>
+</table>
