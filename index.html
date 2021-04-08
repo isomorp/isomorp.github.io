@@ -1,8 +1,9 @@
-<body width=100%>
+<body>
+<p>
 <table>
-  <tr><th><img src='UserGuide/m.png' width="25%"><img src='UserGuide/graph3.png' width="25%"><img src='UserGuide/graph1.png' width="25%"><img src ='UserGuide/graph2.png' width="25%"></th></tr>
+  <tr><td><img src='UserGuide/m.png' width="25%"><img src='UserGuide/graph3.png' width="25%"><img src='UserGuide/graph1.png' width="25%"><img src ='UserGuide/graph2.png' width="25%"></td></tr>
 <tr>
-  <th width=100%>
+  <td>
     <hr>
     <h1><p>Welcome to <b>Isomorph</b> - a graph drawing tool, which allows you to create colored graphs!</p></h1>
     <hr>
@@ -74,7 +75,24 @@
         <th><img src='UserGuide/positive.png'></th>
       </tr>
     </table>
-  </th>
+  </td>
   </tr>
 </table>
+</p>
+<p>
+  <h2>Program Constarints</h2>
+  <ul>
+    <li>Vertex constarints</li>
+    <ul>
+      <li>We do not allow white vertices on white canvas - coloring a vertex white deletes a vertex</li>
+    </ul>
+    <li>Edge constarints</li>
+    <ul>
+      <li>We do not allow white edges on white canvas - coloring an edge white deletes it</li>
+      <li>We do not allow black edges - coloring an edge black deletes it; as color black in hexadecimal is equal to 0, we would not have a way to distinguish no edges from black edges</li>
+    </ul>
+  </ul>
+  <h2>Linkage to the isomorphism file</h2>
+  User should provide a valid compiled binary file if they want to use our interface! Invalid files will not work properly!
+</p>
 </body>
